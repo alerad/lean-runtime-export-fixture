@@ -1,0 +1,20 @@
+name: Publish Lean environment
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
+jobs:
+  publish:
+    uses: alerad/lean-runtime/.github/workflows/publish-project.yml@project-publish-ux-2.3
+    with:
+      project: .
+      library: ghcr.io/alerad/lean-runtime-export-fixture-environments
+      module: LeanRuntimeExportFixture
+      public: false
+      runtime-ref: project-publish-ux-2.3
+    secrets: inherit
