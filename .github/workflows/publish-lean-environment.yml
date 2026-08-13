@@ -15,6 +15,6 @@ jobs:
       project: .
       library: ghcr.io/alerad/lean-runtime-export-fixture-environments
       module: LeanRuntimeExportFixture
-      public: false
+      public: true
       runtime-ref: project-publish-ux-2.3
     secrets: inherit
