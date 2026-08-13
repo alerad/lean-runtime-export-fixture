@@ -17,4 +17,5 @@ jobs:
       module: LeanRuntimeExportFixture
       public: true
       runtime-ref: project-publish-ux-2.3
+      minimum-reuse-percent: 99
     secrets: inherit
